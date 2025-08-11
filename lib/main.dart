@@ -1,20 +1,6 @@
-import 'package:flutter/material.dart';
+import 'Song.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  var s1 = Song('Golden', 'HUNTR/X', 2025);
+  s1.describe();
 }
