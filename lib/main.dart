@@ -1,20 +1,7 @@
-import 'package:flutter/material.dart';
+import 'Country.dart'; //pag import han country ta na class
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  var country = Country('Philippines', 'Manila');
+  country.displayInfo();
+  // Output: Country: Philippines, Capital: Manila
 }
